@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Calculadora/title>
+    <title>Calculadora</title>
 
     <!-- CDN de Bootstrap 5.3.3. -->
     <link
@@ -24,117 +25,174 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="./assets/css/calculadora.css" />
   </head>
+
   <body>
-    <div class="container">
-      <h2 class="titulo text-center">Calculadora-Sprint</h2>
+    <h2 class="text-center">Calculadora - Sprint</h2>
 
-      <!-- Calculadora -->
+    <!-- Calculadora -->
 
-      <div class="card text-center bg-info-subtle">
-        <!-- Pantalla -->
+    <div class="card text-center bg-info-subtle">
+      <!-- Pantalla -->
 
-        <div class="bg-light mx-4 mt-4" id="pantalla">
-          <div>
-            <input
-              type="email"
-              class="form-control text-end"
-              id="exampleFormControlInput1"
-              placeholder=""
-              disabled
-            />
-          </div>
+      <div class="mx-4 mt-4" id="pantalla">
+        <div>
+          <input type="" value="" class="outcome" disabled />
         </div>
+      </div>
 
-        <!-- Botones -->
+      <!-- Botones -->
 
-        <!-- Fila 1 -->
-        <div class="row mt-3 mb-3">
-          <div class="col-3">
-            <button id="boton-7" type="button" class="btn btn-secondary">
-              7
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="boton-8" type="button" class="btn btn-secondary">
-              8
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="boton-9" type="button" class="btn btn-secondary">
-              9
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="division" type="button" class="btn btn-warning">
-              /
-            </button>
-          </div>
+      <!-- Fila 1 -->
+      <div class="row mt-3 mb-3">
+        <div class="col-3">
+          <button
+            id="boton-7"
+            type="button"
+            href="7"
+            class="btn btn-secondary val"
+          >
+            7
+          </button>
         </div>
-
-        <!-- Fila 2 -->
-        <div class="row mb-3">
-          <div class="col-3">
-            <button id="boton-4" type="button" class="btn btn-secondary">
-              4
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="boton-5" type="button" class="btn btn-secondary">
-              5
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="boton-6" type="button" class="btn btn-secondary">
-              6
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="multiplicacion" type="button" class="btn btn-warning">
-              *
-            </button>
-          </div>
+        <div class="col-3">
+          <button
+            id="boton-8"
+            type="button"
+            href="8"
+            class="btn btn-secondary val"
+          >
+            8
+          </button>
         </div>
-
-        <!-- Fila 3 -->
-        <div class="row mb-3">
-          <div class="col-3">
-            <button id="boton-1" type="button" class="btn btn-secondary">
-              1
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="boton-2" type="button" class="btn btn-secondary">
-              2
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="boton-3" type="button" class="btn btn-secondary">
-              3
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="resta" type="button" class="btn btn-warning">-</button>
-          </div>
+        <div class="col-3">
+          <button
+            id="boton-9"
+            type="button"
+            href="9"
+            class="btn btn-secondary val"
+          >
+            9
+          </button>
         </div>
+        <div class="col-3">
+          <button
+            id="division"
+            type="button"
+            href="/"
+            class="btn btn-warning val"
+          >
+            /
+          </button>
+        </div>
+      </div>
 
-        <!-- Fila 4 -->
-        <div class="row mb-3">
-          <div class="col-3">
-            <button id="boton-0" type="button" class="btn btn-secondary">
-              0
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="resultado" type="button" class="btn btn-primary">
-              =
-            </button>
-          </div>
-          <div class="col-3">
-            <button id="borrar" type="button" class="btn btn-danger">C</button>
-          </div>
-          <div class="col-3">
-            <button type="sumar" class="btn btn-warning">+</button>
-          </div>
+      <!-- Fila 2 -->
+      <div class="row mb-3">
+        <div class="col-3">
+          <button
+            id="boton-4"
+            type="button"
+            href="4"
+            class="btn btn-secondary val"
+          >
+            4
+          </button>
+        </div>
+        <div class="col-3">
+          <button
+            id="boton-5"
+            type="button"
+            href="5"
+            class="btn btn-secondary val"
+          >
+            5
+          </button>
+        </div>
+        <div class="col-3">
+          <button
+            id="boton-6"
+            type="button"
+            href="6"
+            class="btn btn-secondary val"
+          >
+            6
+          </button>
+        </div>
+        <div class="col-3">
+          <button
+            id="multiplicacion"
+            type="button"
+            href="*"
+            class="btn btn-warning val"
+          >
+            *
+          </button>
+        </div>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="row mb-3">
+        <div class="col-3">
+          <button
+            id="boton-1"
+            type="button"
+            href="1"
+            class="btn btn-secondary val"
+          >
+            1
+          </button>
+        </div>
+        <div class="col-3">
+          <button
+            id="boton-2"
+            type="button"
+            href="2"
+            class="btn btn-secondary val"
+          >
+            2
+          </button>
+        </div>
+        <div class="col-3">
+          <button
+            id="boton-3"
+            type="button"
+            href="3"
+            class="btn btn-secondary val"
+          >
+            3
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="resta" type="button" href="-" class="btn btn-warning val">
+            -
+          </button>
+        </div>
+      </div>
+
+      <!-- Fila 4 -->
+      <div class="row mb-3">
+        <div class="col-3">
+          <button
+            id="boton-0"
+            type="button"
+            href="0"
+            class="btn btn-secondary val"
+          >
+            0
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="resultado" type="button" class="btn btn-primary equal">
+            =
+          </button>
+        </div>
+        <div class="col-3">
+          <button id="borrar" type="button" class="clear btn btn-danger">
+            C
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="sumar" href="+" class="btn btn-warning val">+</button>
         </div>
       </div>
     </div>
@@ -151,14 +209,47 @@
     </footer>
     <!--Cierre de Footer con boostrap -->
 
-    <!-- CDN de JQuery 3.7.1 -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <!-- CDN de JQuery 3.7.1 --
+    
 
     <!-- Javascript interno -->
     <script src="./assets/js/calculadora.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".val").click(function (e) {
+          e.preventDefault();
+          var a = $(this).attr("href");
+          $(".pantalla").append(a);
+          $(".outcome").val($(".outcome").val() + a);
+        });
+        $(".equal").click(function () {
+          $(".outcome").val(eval($(".outcome").val()));
+          $(".pantalla").html(eval($(".outcome").val()));
+        });
+        $(".clear").click(function () {
+          $(".outcome").val("");
+          $(".pantalla").html("");
+        });
+        $(".min").click(function () {
+          $(".cal").stop().animate(
+            {
+              width: "0px",
+              height: "0px",
+              marginLeft: "700px",
+              marginTop: "1000px",
+            },
+            500
+          );
+          setTimeout(function () {
+            $(".cal").css("display", "none");
+          }, 600);
+        });
+        $(".close").click(function () {
+          $(".cal").css("display", "none");
+        });
+      });
+    </script>
   </body>
 </html>
