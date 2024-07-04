@@ -40,8 +40,8 @@ Para ejecutar este proyecto, necesitarás tener instalado lo siguiente:
 
 El proyecto utiliza las siguientes bibliotecas:
 
-- [Bootstrap 4.5.2](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css)
-- [jQuery 3.5.1](//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js)
+- [Bootstrap 5.3.3](https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css)
+- [jQuery 1.8.3](//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js)
 
 Estas bibliotecas se cargan desde CDNs y no requieren instalación adicional.
 
